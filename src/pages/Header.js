@@ -36,7 +36,7 @@ import { LiaCommentSolid } from "react-icons/lia";
 import { AiFillLike } from "react-icons/ai";
 import { ProgressBar } from "react-bootstrap";
 import { colors } from "@mui/material";
-import { TiSocialInstagram} from "react-icons/ti";
+import { TiSocialInstagram } from "react-icons/ti";
 import Nav from "react-bootstrap/Nav";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { GrLocation, GrPhone } from "react-icons/gr";
@@ -532,7 +532,7 @@ export default function Header() {
       {/* <------------------Social Media section End--------> */}
       {/* <--------------About us start--------------------> */}
       <Container fluid className="bg-light pt-5 ">
-        <Row className="mx-5" >
+        <Row className="mx-5">
           <Col className="mb-5">
             <Row>
               <Col className="d-flex align-item-center ">
@@ -551,89 +551,119 @@ export default function Header() {
                 onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
               >
                 <Nav.Item>
-                  <Nav.Link href="https://www.youtube.com/channel/UCIXSD6qoTMxqKzApPwk-B9A" className="text-dark">
-                    <FaSquareYoutube  className="fs-5" />
+                  <Nav.Link
+                    href="https://www.youtube.com/channel/UCIXSD6qoTMxqKzApPwk-B9A"
+                    className="text-dark"
+                  >
+                    <FaSquareYoutube className="fs-5" />
                   </Nav.Link>
                 </Nav.Item>
 
                 <Nav.Item>
-                  <Nav.Link href="https://www.facebook.com/profile.php?id=61558515593724" className="text-dark">
-                  <FaFacebookSquare className="fs-5 " style={{marginLeft : "-20px"}} />
-
+                  <Nav.Link
+                    href="https://www.facebook.com/profile.php?id=61558515593724"
+                    className="text-dark"
+                  >
+                    <FaFacebookSquare
+                      className="fs-5 "
+                      style={{ marginLeft: "-20px" }}
+                    />
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="https://www.instagram.com/mtechinfotech28/" className="text-dark">
-                    <FaInstagramSquare className="fs-5" style={{marginLeft : "-20px"}}/>
+                  <Nav.Link
+                    href="https://www.instagram.com/mtechinfotech28/"
+                    className="text-dark"
+                  >
+                    <FaInstagramSquare
+                      className="fs-5"
+                      style={{ marginLeft: "-20px" }}
+                    />
                   </Nav.Link>
                 </Nav.Item>
 
                 <Nav.Item>
-                  <Nav.Link href="https://twitter.com/mtechinfotech48" className="text-dark">
-                    <FaSquareXTwitter className="fs-5" style={{marginLeft : "-20px"}}/>
+                  <Nav.Link
+                    href="https://twitter.com/mtechinfotech48"
+                    className="text-dark"
+                  >
+                    <FaSquareXTwitter
+                      className="fs-5"
+                      style={{ marginLeft: "-20px" }}
+                    />
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="" className="text-dark">
-                    <FaLinkedin className="fs-5" style={{marginLeft : "-20px"}}/>
+                    <FaLinkedin
+                      className="fs-5"
+                      style={{ marginLeft: "-20px" }}
+                    />
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
             </Row>
           </Col>
 
-          <Col  className="mb-4">  
-          
-          
+          <Col className="mb-4">
             <h4>Company</h4>
-            
-            <p>About Us</p>
-            <p>Careers</p>
-            <p>Blog</p>
-            <p>Newsroom</p>
-            <p>Landing Partner</p>
+
+            <Nav className="d-grid">
+            <Nav.Link href="#" className="text-dark">About Us</Nav.Link>
+            <Nav.Link href="#" className="text-dark">Careers</Nav.Link>
+            <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
+            <Nav.Link href="#" className="text-dark">Newsroom</Nav.Link>
+            <Nav.Link href="#" className="text-dark">Landing Partner</Nav.Link>
+          </Nav>
+
+        
           </Col>
           <Col className="mb-4">
             <h4>We'd love to hear from you!</h4>
             <p>You can reach out to us at:</p>
             <div className="d-flex">
               <span>
-                <GrPhone  className="fs-5"/>
+                <GrPhone className="fs-5" />
               </span>
               <p className="mx-2 ">+919824391733</p>
             </div>
             <div className="d-flex">
               <span>
-              <FiMail  className="fs-5"/>
+                <FiMail className="fs-5" />
               </span>
               <p className="mx-2">info@mtechinfotech.com</p>
             </div>
             <div className="d-flex">
               <span>
-              <GrLocation  className="fs-5"/>
+                <GrLocation className="fs-5" />
               </span>
               <p className="mx-2">
-              GF-5 Four Avenue Sevasi Khanpur Road, Vadodara, Gujrat
+                GF-5 Four Avenue Sevasi Khanpur Road, Vadodara, Gujrat
               </p>
             </div>
           </Col>
         </Row>
-        <hr/>
-        <Row className=" my-4 pb-4  text-center">
-          <Col className="text-muted">
-          © 2024 Mtech Infotech, All rights reserved.
+        <hr />
+        <Row className=" my-4 pb-4  text-center ">
+          <Col className="mx-5">
+            <Nav>
+              <Nav.Item>
+                <Nav.Link className="text-dark"  href="#">
+                  {" "}
+                  © 2024 Mtech Infotech, All rights reserved.
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
           </Col>
-
-          
           <Col>
-          <Nav  >
-        <Nav.Item >
-          <Nav.Link href="">Terms & Conditions</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="">Privacy Policy</Nav.Link>
-        </Nav.Item>
-        </Nav>
+            <Nav>
+              <Nav.Item>
+                <Nav.Link  className="text-dark" href="">Terms & Conditions</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link  className="text-dark" href="">Privacy Policy</Nav.Link>
+              </Nav.Item>
+            </Nav>
           </Col>
         </Row>
       </Container>
